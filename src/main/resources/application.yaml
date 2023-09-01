@@ -1,0 +1,11 @@
+server:
+  port: 8761 # Convention to eureka server
+
+spring:
+  application:
+    name: ead-service-registry
+
+eureka:
+  client:
+    registerWithEureka: false # Not client, only server, not register yourself
+    fetchRegistry: false # Not search registry in Eureka
